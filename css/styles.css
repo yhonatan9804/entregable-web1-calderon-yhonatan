@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-  color: #fff; /* ✅ Deja espacio para que el nav fijo no tape el hero */
+  color: #fff; /* Deja espacio para que el nav fijo no tape el hero */
 }
 /* Barra de navegación */
 nav {
@@ -209,12 +209,12 @@ footer {
 
 /* Texto debajo de cada icono */
 .habilidad p {
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
   margin: 0;
 }
 
-#Aspiraciones-Profesionales h2 {
+#Mis-Proyectos h2 {
   color: #ff4d5a; 
   padding-left: 30px;
   padding-right: 30px;
@@ -283,4 +283,5 @@ html {
     width: 200px; /* Hacemos los iconos más pequeños */
     height: 200px;
   }
+
 }
