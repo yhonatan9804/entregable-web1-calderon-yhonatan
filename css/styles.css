@@ -1,0 +1,286 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff; /* ✅ Deja espacio para que el nav fijo no tape el hero */
+}
+/* Barra de navegación */
+nav {
+  display: flex;
+  justify-content: center; /* Logo a la izquierda, menú a la derecha */
+  align-items: center;
+  padding: 15px 50px;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espacio entre la imagen y el texto */
+}
+
+/* Logo circular */
+.logo img {
+  width: 50px;
+  height: 60px;
+  border-radius: 50%;   /* círculo */
+  object-fit: cover;    /* recorte bien proporcionado */
+  border: 2px solid #fff; /* borde blanco para resaltar */
+}
+
+
+/* Menú */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 🔹 permite que los items bajen */
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+	width: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    background: #f44b4b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    white-space: nowrap; /* 🔹 evita que "Contáctame" se corte */
+    transition: background 0.3s ease;
+	display: inline-block;
+}
+
+nav ul li a:hover {
+  color: #ff4d5a;
+  text-shadow: 0px 0px 8px rgba(255, 77, 90, 0.7);
+      background: #555;
+
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;     /* 🔹 se acomoda en pantallas pequeñas */
+  min-height: 100vh;
+  padding: 0 50px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: #ff4d5a;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #eee;
+}
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #eee;
+}
+
+/* Contenedor de los botones en el Hero */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;   /* 🔹 permite que bajen en pantallas pequeñas */
+  gap: 15px;         /* 🔹 espacio entre botones */
+  margin-top: 20px;
+}
+
+/* Estilos generales de los botones */
+.buttons .btn {
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+  text-align: center;   /* 🔹 centra el texto */
+  min-width: 140px;     /* 🔹 asegura que no se achiquen demasiado */
+  flex: 1 1 auto;       /* 🔹 se adaptan al espacio */
+}
+
+/* Botón principal */
+.btn.primary {
+  background: #ff4d5a;
+  color: #fff;
+}
+
+/* Botón secundario */
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #ff4d5a;
+  color: #ff4d5a;
+}
+
+/* MEJORA: Efecto de hover más dinámico */
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-3px); /* <-- Esta línea crea el efecto de elevación */
+}
+
+.hero-img img {
+  width: 100%;          /* ocupa todo el ancho disponible */
+  max-width: 350px;     /* límite para que no se haga enorme */
+  height: auto;         /* mantiene proporciones */
+  border-radius: 50px;  /* esquinas redondeadas */
+  object-fit: cover;    /* recorta bien la imagen */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+  border: 3px solid #ff4d5a; /* <-- Borde con el color principal */
+}
+
+/* Iconos de habilidades (versión existente) */
+.habilidad img.icono {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  object-fit: contain;
+  transition: transform 0.3s ease; /* <-- AÑADE ESTA LÍNEA */
+}
+
+/* MEJORA: Efecto hover para los iconos */
+.habilidad img.icono:hover {
+  transform: scale(1.05); /* <-- AÑADE ESTA NUEVA REGLA */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+.skills {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.skills h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color:#ff4d5a;
+  text-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+}
+
+/* Contenedor de habilidades en grilla */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Cada habilidad */
+.habilidad {
+  text-align: center;
+  width: 300px;
+}
+
+/* Iconos de habilidades */
+.habilidad img.icono {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+  border-radius: 10px;  /* opcional, redondea un poco los bordes */
+  object-fit: contain;
+}
+
+/* Texto debajo de cada icono */
+.habilidad p {
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+}
+
+#Aspiraciones-Profesionales h2 {
+  color: #ff4d5a; 
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1000px;
+  margin-left: 8px; /* Ajusta este valor según lo que te guste */
+  margin-right: 40px; /* Puedes usar menos */
+ }
+
+#contact h2 {
+  color: #ff4d5a; /* aquí pones el color que quieras */
+}
+
+/* MEJORA: Navegación suave */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+
+  /* Ajustamos la barra de navegación para móviles */
+  nav {
+    flex-direction: column; /* Apila el logo y el menú */
+    padding: 15px;
+  }
+  nav ul {
+    margin-top: 15px; /* Espacio entre el logo y los botones del menú */
+    gap: 8px; /* Reduce el espacio entre botones */
+  }
+
+  /* Ajustamos la sección principal (Hero) */
+  .hero {
+    /* El texto y la imagen se apilan verticalmente */
+    flex-direction: column-reverse; /* La imagen se pone arriba */
+    text-align: center; /* Centramos todo el texto */
+    padding-top: 150px; /* Más espacio arriba para que no lo tape el nav */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-text {
+    max-width: 100%; /* El texto ocupa todo el ancho */
+  }
+  
+  .hero-img img {
+    max-width: 250px; /* Hacemos la imagen un poco más pequeña en móviles */
+    height: 250px;
+  }
+
+  .buttons {
+    justify-content: center; /* Centramos los botones */
+  }
+
+  /* Reducimos el tamaño de los títulos y el espaciado en general */
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  section {
+    padding: 60px 20px;
+  }
+
+  /* Ajustamos la grilla de habilidades */
+  .habilidad img.icono {
+    width: 200px; /* Hacemos los iconos más pequeños */
+    height: 200px;
+  }
+}
