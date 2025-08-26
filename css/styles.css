@@ -233,7 +233,6 @@ html {
 }
 
 @media (max-width: 768px) {
-
   nav {
     flex-direction: column;
     padding: 15px;
