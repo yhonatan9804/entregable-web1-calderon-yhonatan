@@ -1,15 +1,15 @@
-/* General */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-  color: #fff; /* Deja espacio para que el nav fijo no tape el hero */
+  color: #fff; 
 }
 
-/* Barra de navegación */
+
 nav {
   display: flex;
-  justify-content: center; /* Logo a la izquierda, menú a la derecha */
+  justify-content: center;
   align-items: center;
   padding: 15px 50px;
   background: rgba(0, 0, 0, 0.6);
@@ -19,29 +19,29 @@ nav {
   z-index: 1000;
 }
 
-/* Logo */
+
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px; /* espacio entre la imagen y el texto */
+  gap: 10px; 
 }
 
-/* Logo circular */
+
 .logo img {
   width: 50px;
   height: 60px;
-  border-radius: 50%;   /* círculo */
-  object-fit: cover;    /* recorte bien proporcionado */
-  border: 2px solid #fff; /* borde blanco para resaltar */
+  border-radius: 50%;  
+  object-fit: cover;    
+  border: 2px solid #ec2525; /
 }
 
 
-/* Menú */
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* 🔹 permite que los items bajen */
+    flex-wrap: wrap; 
     gap: 20px;
     padding: 0;
     margin: 0;
@@ -54,7 +54,7 @@ nav ul li a {
     background: #f44b4b;
     padding: 10px 20px;
     border-radius: 5px;
-    white-space: nowrap; /* 🔹 evita que "Contáctame" se corte */
+    white-space: nowrap; 
     transition: background 0.3s ease;
 	display: inline-block;
 }
@@ -67,12 +67,12 @@ nav ul li a:hover {
 }
 
 
-/* Hero section */
+
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;     /* 🔹 se acomoda en pantallas pequeñas */
+  flex-wrap: wrap;    
   min-height: 100vh;
   padding: 0 50px;
 }
@@ -100,71 +100,71 @@ nav ul li a:hover {
   color: #eee;
 }
 
-/* Contenedor de los botones en el Hero */
+
 .buttons {
   display: flex;
-  flex-wrap: wrap;   /* 🔹 permite que bajen en pantallas pequeñas */
-  gap: 15px;         /* 🔹 espacio entre botones */
+  flex-wrap: wrap;   
+  gap: 15px;         
   margin-top: 20px;
 }
 
-/* Estilos generales de los botones */
+
 .buttons .btn {
   padding: 12px 20px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
   transition: transform 0.2s ease, opacity 0.3s ease;
-  text-align: center;   /* 🔹 centra el texto */
-  min-width: 140px;     /* 🔹 asegura que no se achiquen demasiado */
-  flex: 1 1 auto;       /* 🔹 se adaptan al espacio */
+  text-align: center;   
+  min-width: 140px;     
+  flex: 1 1 auto;       
 }
 
-/* Botón principal */
+
 .btn.primary {
   background: #ff4d5a;
   color: #fff;
 }
 
-/* Botón secundario */
+
 .btn.secondary {
   background: transparent;
   border: 2px solid #ff4d5a;
   color: #ff4d5a;
 }
 
-/* MEJORA: Efecto de hover más dinámico */
+
 .btn:hover {
   opacity: 0.9;
-  transform: translateY(-3px); /* <-- Esta línea crea el efecto de elevación */
+  transform: translateY(-3px); 
 }
 
 .hero-img img {
-  width: 100%;          /* ocupa todo el ancho disponible */
-  max-width: 350px;     /* límite para que no se haga enorme */
-  height: auto;         /* mantiene proporciones */
-  border-radius: 50px;  /* esquinas redondeadas */
-  object-fit: cover;    /* recorta bien la imagen */
+  width: 100%;          
+  max-width: 350px;     
+  height: auto;         
+  border-radius: 50px;  
+  object-fit: cover;   
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
-  border: 3px solid #ff4d5a; /* <-- Borde con el color principal */
+  border: 3px solid #ff4d5a; 
 }
 
-/* Iconos de habilidades (versión existente) */
+
 .habilidad img.icono {
   width: 300px;
   height: 300px;
   margin-bottom: 10px;
   border-radius: 10px;
   object-fit: contain;
-  transition: transform 0.3s ease; /* <-- AÑADE ESTA LÍNEA */
+  transition: transform 0.3s ease; 
 }
 
-/* MEJORA: Efecto hover para los iconos */
+
 .habilidad img.icono:hover {
-  transform: scale(1.05); /* <-- AÑADE ESTA NUEVA REGLA */
+  transform: scale(1.05); 
 }
 
-/* Footer */
+
 footer {
   text-align: center;
   padding: 20px;
@@ -186,7 +186,7 @@ footer {
   text-shadow: 0px 0px 6px rgba(0,0,0,0.5);
 }
 
-/* Contenedor de habilidades en grilla */
+
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -195,22 +195,22 @@ footer {
   margin-top: 20px;
 }
 
-/* Cada habilidad */
+
 .habilidad {
   text-align: center;
   width: 300px;
 }
 
-/* Iconos de habilidades */
+
 .habilidad img.icono {
   width: 300px;
   height: 300px;
   margin-bottom: 10px;
-  border-radius: 10px;  /* opcional, redondea un poco los bordes */
+  border-radius: 10px;  
   object-fit: contain;
 }
 
-/* Texto debajo de cada icono */
+
 .habilidad p {
   font-size: 20px;
   color: #fff;
@@ -222,56 +222,56 @@ footer {
   padding-left: 30px;
   padding-right: 30px;
   max-width: 1000px;
-  margin-left: 8px; /* Ajusta este valor según lo que te guste */
-  margin-right: 40px; /* Puedes usar menos */
+  margin-left: 8px; 
+  margin-right: 40px;
  }
 
 #contact h2 {
-  color: #ff4d5a; /* aquí pones el color que quieras */
+  color: #ff4d5a; 
   padding-left: 50px;
 }
 
-/* MEJORA: Navegación suave */
+
 html {
   scroll-behavior: smooth;
 }
 
 @media (max-width: 768px) {
 
-  /* Ajustamos la barra de navegación para móviles */
+ 
   nav {
-    flex-direction: column; /* Apila el logo y el menú */
+    flex-direction: column; 
     padding: 15px;
   }
   nav ul {
-    margin-top: 15px; /* Espacio entre el logo y los botones del menú */
-    gap: 8px; /* Reduce el espacio entre botones */
+    margin-top: 15px; 
+    gap: 8px; 
   }
 
-  /* Ajustamos la sección principal (Hero) */
+  
   .hero {
-    /* El texto y la imagen se apilan verticalmente */
-    flex-direction: column-reverse; /* La imagen se pone arriba */
-    text-align: center; /* Centramos todo el texto */
-    padding-top: 150px; /* Más espacio arriba para que no lo tape el nav */
+    
+    flex-direction: column-reverse; 
+    text-align: center; 
+    padding-top: 150px; 
     padding-left: 20px;
     padding-right: 20px;
   }
 
   .hero-text {
-    max-width: 100%; /* El texto ocupa todo el ancho */
+    max-width: 100%; 
   }
   
   .hero-img img {
-    max-width: 250px; /* Hacemos la imagen un poco más pequeña en móviles */
+    max-width: 250px; 
     height: 250px;
   }
 
   .buttons {
-    justify-content: center; /* Centramos los botones */
+    justify-content: center; 
   }
 
-  /* Reducimos el tamaño de los títulos y el espaciado en general */
+  
   h1 {
     font-size: 36px;
   }
@@ -282,27 +282,27 @@ html {
     padding: 60px 20px;
   }
 
-  /* Ajustamos la grilla de habilidades */
+  
   .habilidad img.icono {
-    width: 200px; /* Hacemos los iconos más pequeños */
+    width: 200px; 
     height: 200px;
   }
 
-/* Estilos generales para la foto de familia (siempre aplicados) */
+
 .img-metas {
   display: block;
-  width: 100%;         /* la imagen se adapta al ancho del contenedor */
-  max-width: 600px;    /* límite en pantallas grandes */
-  height: auto;        /* mantiene proporción */
-  margin: 30px auto;   /* centra la imagen */
-  border-radius: 15px; /* bordes redondeados */
+  width: 100%;         
+  max-width: 600px;    
+  height: auto;        
+  margin: 30px auto;   
+  border-radius: 15px; 
   box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
-/* Ajustes específicos solo para móviles */
+
 @media (max-width: 768px) {
   .img-metas {
-    max-width: 400px;  /* más pequeña en móviles */
+    max-width: 400px;  
   }
 }
 .contenedor-img-metas {
