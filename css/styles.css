@@ -5,6 +5,7 @@ body {
   background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   color: #fff; /* Deja espacio para que el nav fijo no tape el hero */
 }
+
 /* Barra de navegación */
 nav {
   display: flex;
@@ -17,6 +18,7 @@ nav {
   top: 0;
   z-index: 1000;
 }
+
 /* Logo */
 .logo {
   display: flex;
@@ -63,6 +65,7 @@ nav ul li a:hover {
       background: #555;
 
 }
+
 
 /* Hero section */
 .hero {
@@ -225,6 +228,7 @@ footer {
 
 #contact h2 {
   color: #ff4d5a; /* aquí pones el color que quieras */
+  padding-left: 50px;
 }
 
 /* MEJORA: Navegación suave */
@@ -283,5 +287,27 @@ html {
     width: 200px; /* Hacemos los iconos más pequeños */
     height: 200px;
   }
+
+/* Estilos generales para la foto de familia (siempre aplicados) */
+.img-metas {
+  display: block;
+  width: 100%;         /* la imagen se adapta al ancho del contenedor */
+  max-width: 600px;    /* límite en pantallas grandes */
+  height: auto;        /* mantiene proporción */
+  margin: 30px auto;   /* centra la imagen */
+  border-radius: 15px; /* bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* Ajustes específicos solo para móviles */
+@media (max-width: 768px) {
+  .img-metas {
+    max-width: 400px;  /* más pequeña en móviles */
+  }
+}
+.contenedor-img-metas {
+  display: flex;
+  justify-content: center;
+}
 
 }
