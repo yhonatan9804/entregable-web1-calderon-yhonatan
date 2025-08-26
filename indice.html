@@ -9,117 +9,109 @@
 <body>
   
   <nav>
-    <div class="logo">
+    <div class="contenedor-logo">
       <img src="./img/Logo.jpg" alt="Logo">
       <span>Mi Portafolio</span>
     </div>
-    <ul>
-      <li><a href="#home">Inicio</a></li>
-      <li><a href="#skills">Mis Gustos</a></li>
-	  <li><a href="#Mis-Proyectos">Mis Proyectos</a></li>
-      <li><a href="#contact">Contacto</a></li>
+    <ul class="menu-navegacion">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#gustos">Mis Gustos</a></li>
+	  <li><a href="#proyectos">Mis Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>
 
-  
-  <section id="home" class="hero">
-    <div class="hero-text">
+  <section id="inicio" class="seccion-inicio">
+    <div class="texto-inicio">
       <h3>Hola, soy</h3>
       <h1>Yhonatan Calderon Quira</h1>
       <h2>Estudiante Ing. Sistemas</h2>
       <p>
-		Mi portafolio personal.
-    En este espacio les enseño un poco de mi vida, doonde podran saber dobre mis gustos, lo que me hace feliz y los proyectos mas importantes que
-     tengo en el trancurso de mi carrera profesional.   </p>
-      <div class="buttons">
-        <a href="#contact" class="btn primary">Contáctame</a>
-		<a href="#Mis-Proyectos" class="btn secondary">Mis Proyectos</a>
+        Mi portafolio personal. En este espacio les enseño un poco de mi vida,
+        donde podrán saber sobre mis gustos, lo que me hace feliz y los proyectos
+        más importantes que tengo en el transcurso de mi carrera profesional.
+      </p>
+      <div class="contenedor-botones">
+        <a href="#contacto" class="btn btn-principal">Contáctame</a>
+		<a href="#proyectos" class="btn btn-secundario">Mis Proyectos</a>
       </div>
     </div>
-    <div class="hero-img">
+    <div class="imagen-inicio">
       <img src="./img/perfil.jpg" alt="Foto de perfil">
     </div>
   </section>
 
-
-  <section id="skills" class="skills">
-  <h2>Mis Gustos</h2>
-  <div class="skills-grid">
-    <div class="habilidad">
-      <img src="./img/jugar.jpg" alt="Futbol" class="icono">
-      <p>Futbol</p>
+  <section id="gustos" class="seccion-gustos">
+    <h2>Mis Gustos</h2>
+    <div class="grid-gustos">
+      <div class="item-gusto">
+        <img src="./img/jugar.jpg" alt="Futbol" class="icono-gusto">
+        <p>Futbol</p>
+      </div>
+      <div class="item-gusto">
+        <img src="./img/viajar.jpg" alt="Viajar" class="icono-gusto">
+        <p>Viajar</p>
+      </div>
+      <div class="item-gusto">
+        <img src="./img/comer.jpg" alt="Comer" class="icono-gusto">
+        <p>Comer</p>
+      </div>
+      <div class="item-gusto">
+        <img src="./img/aprender.jpg" alt="Aprender" class="icono-gusto">
+        <p>Aprender</p>
+      </div>
     </div>
-    <div class="habilidad">
-      <img src="./img/viajar.jpg" alt="Viajar" class="icono">
-      <p>Viajar</p>
-    </div>
-    <div class="habilidad">
-      <img src="./img/comer.jpg" alt="Comer" class="icono">
-      <p>Comer</p>
-    </div>
-    <div class="habilidad">
-      <img src="./img/aprender.jpg" alt="Aprender" class="icono">
-      <p>Aprender</p>
-    </div>
-  </div>
   
-  <p class="mensaje-gustos">
-    Cada uno de estos gustos refleja lo importante que son para mi, ya que gracias a ellos he vivido muchas experiencias que me 
-    han servido para mejorar cada dia mas como persona. Quiero que sigan presente todos los dias de mi vida.
-  </p>
-</section>
-</section>
+    <p class="texto-gustos">
+      Cada uno de estos gustos refleja lo importante que son para mí, ya que gracias
+      a ellos he vivido muchas experiencias que me han servido para mejorar cada día
+      más como persona.
+    </p>
+  </section>
 
+  <section id="proyectos" class="seccion-proyectos">
+    <h2>Mis Proyectos</h2>
+    
+   <p class="texto-proyectos">
+      Como estudiante, mi propósito es seguir mejorando cada día para demostrarle a mi familia 
+      que con esfuerzo, disciplina y perseverancia sí es posible alcanzar los sueños. Me motiva 
+      lograr las metas que en un inicio me impulsaron a continuar con mis estudios, ya que sé que 
+      la educación es la base para construir un mejor futuro. Además, aspiro a crear mi propia 
+      empresa, no solo para alcanzar independencia económica, sino también para generar empleo y 
+      aportar al desarrollo de mi comunidad. Finalmente, deseo convertirme en un profesional 
+      reconocido en mi campo, destacándome por mis conocimientos, valores y compromiso, dejando 
+      en alto el esfuerzo que he hecho durante mi formación académica.
+    </p>
+    <img src="./img/familia.jpg" alt="Mis metas" class="imagen-proyectos">
+  </section>
 
-<section id="Mis-Proyectos" class="Mis-Proyectos">
-  <h2>Mis Proyectos</h2>
-  <p>Estas son algunas de las metas que tengo con mi carrera:</p>
+  <section id="contacto" class="seccion-contacto">
+    <h2>Contáctame</h2>
+    <p>Si quieres conocer más sobre mí, contáctame.</p>
 
-  <ul>
-    <li>Quiero seguir mejorando cada dia mas, para poder demostrarle a mi familia que si se pudo lograr con la ayuda de ellos.</li>
-    <li>lograr las metas que me motivaron a seguir estudiando.</li>
-    <li>Crear mi propia empresa para no depender de nadies.</li>
-    <li>Volverme un profesional muy reconocido e inteligente en mi profesion.</li>
-  </ul>
+    <p>
+      <img src="./img/correo.jpg" alt="Email" style="width:50px; vertical-align:middle; margin-right:10px;">
+      <strong>Email:</strong> 
+      <a href="mailto:yhonatanquira@gmail.com">yhonatanquira@gmail.com</a>
+    </p>
 
+    <p>
+      <img src="./img/ciudad.jpg" alt="Ciudad" style="width:50px; vertical-align:middle; margin-right:10px;">
+      <strong>Ciudad:</strong> Florencia, Caquetá - Colombia
+    </p>
 
-    <img src="./img/familia.jpg" alt="Mis metas" class="img-metas">
+    <p>
+      <img src="./img/direccion.jpg" alt="Dirección" style="width:50px; vertical-align:middle; margin-right:10px;">
+      <strong>Dirección:</strong> Calle 123 #45-67
+    </p>
 
-</section>
+    <p>
+      <img src="./img/telefono.jpg" alt="Teléfono" style="width:50px; vertical-align:middle; margin-right:10px;">
+      <strong>Teléfono:</strong> 
+      <a href="tel:+573134356494">+57 3134356494</a>
+    </p>
+  </section>
 
-  
- <section id="contact" class="contact">
-  <h2>Contáctame</h2>
-  <p>Si quieres conocer mas sobre mi, contactame.</p>
-
-  
-  <p>
-    <img src="./img/correo.jpg" alt="Email" style="width:50px; vertical-align:middle; margin-right:10px;">
-    <strong>Email:</strong> 
-    <a href="mailto:yhonatanquira@gmail.com">yhonatanquira@gmail.com</a>
-  </p>
-
-  
-  <p>
-    <img src="./img/ciudad.jpg" alt="Ciudad" style="width:50px; vertical-align:middle; margin-right:10px;">
-    <strong>Ciudad:</strong> Florencia, Caquetá - Colombia
-  </p>
-
-
-  <p>
-    <img src="./img/direccion.jpg" alt="Dirección" style="width:50px; vertical-align:middle; margin-right:10px;">
-    <strong>Dirección:</strong> Calle 123 #45-67
-  </p>
-
-  
-  <p>
-    <img src="./img/telefono.jpg" alt="Teléfono" style="width:50px; vertical-align:middle; margin-right:10px;">
-    <strong>Teléfono:</strong> 
-    <a href="tel:+573134356494">+57 3134356494</a>
-  </p>
-</section>
-
-  
   <footer>
     <p>2025 Mi Portafolio - Derechos reservados.</p>
   </footer>
