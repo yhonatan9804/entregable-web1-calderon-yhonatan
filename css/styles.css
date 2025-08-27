@@ -294,9 +294,5 @@ html {
     max-width: 400px;
   }
 
-  .contenedor-imagen-proyectos {
-    display: flex;
-    justify-content: center;
-  }
-
+  
 }
