@@ -228,11 +228,20 @@ footer {
   padding-left: 50px;
 }
 
+  .icono-contacto {
+    width: 24px;           
+    height: 24px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
 html {
   scroll-behavior: smooth;
 }
 
 @media (max-width: 768px) {
+  
   nav {
     flex-direction: column;
     padding: 15px;
@@ -289,4 +298,5 @@ html {
     display: flex;
     justify-content: center;
   }
+
 }
